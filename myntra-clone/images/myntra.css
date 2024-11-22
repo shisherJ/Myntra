@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box  ;
+}
+header{
+    display: flex;
+    height: 80px;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+}
+.logo{
+    height: 44px;
+    width: 59px;
+}
+
+.navbar a {
+    color: #282c3f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 26px 0;
+    border-bottom: 5px solid #ffffff;
+    
+}
+
+.navbar a:hover{
+    border-bottom: 3px solid #ee5f73;
+
+}
+
+.logo_container{
+    margin-left: 4%;
+}
+
+.action_bar{
+    margin-right: 4%;
+}
+.navbar{
+    display: flex;
+   min-width: 510px;
+   justify-content: space-evenly;
+}
+
+.navbar a sup{
+    color: rgb(251, 45, 148);
+}
+
+
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+
+    background-color: #f5f5f6;
+    color: #5e637a;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}
+
+.action_bar{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar a {
+    color: #282c3f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    padding: 26px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:hover {
+    color: #ee5f73;
+}
+
+.navbar a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #ee5f73;
+    transition: width 0.3s ease-in-out;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Special Styling for "STUDIO" Link */
+.navbar .studio {
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .studio sup {
+    color: rgb(251, 45, 148);
+    font-size: 10px;
+    margin-left: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+
+
+
+.action_name{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Action Bar Styling */
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 4%;
+}
+
+/* Individual Action Containers */
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #282c3f;
+    cursor: pointer;
+}
+
+/* Icons Styling */
+.action_container .material-symbols-outlined {
+    font-size: 20px; /* Reduced icon size */
+    color: #20232a;
+}
+
+/* Action Names Styling */
+.action_name {
+
+    font-size: 12px; /* Reduced text size */
+    font-weight: 700; /* Removed boldness */
+    margin-top: 3px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Hover Effect for Action Buttons */
+.action_container:hover {
+    color: #ee5f73;
+}
+
+.action_container:hover .material-symbols-outlined {
+    color: #ee5f73;
+}
+
+.action_container:hover .action_name {
+    color: #ee5f73;
+}
+
+  
+/* when the navbar is hovered everything else is duller  */
+
+/* General Styling */
+body {
+    position: relative;
+    transition: 0.3s ease-in-out; /* Smooth transition for dull effect */
+}
+
+/* Wrapper for the Entire Page */
+.wrapper {
+    transition: 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+header:hover ~ .wrapper {
+    opacity: 0.5; /* Dull everything except the header */
+}
+
+header:hover {
+    opacity: 1; /* Keep the navbar bright */
+}
+
+/* MAIN PAGE */
+.banner_container{
+    margin: 40px 0;
+}
+
+.banner_image{
+    width: 100%;
+}
+
+.category_heading{
+    text-transform: uppercase;
+color: #3e4152;
+letter-spacing: .15em;
+font-size: 1.8em;
+margin: 50px 0 40px 30px;
+max-height: 5em;
+font-weight: 700;
+
+}
+
+.category_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale_items{
+    width: 260px;
+}
+
+.cat_items{
+    width: 300px;
+}
+
+/* footer */
+footer{
+    background-color:#fafbfc;
+}
+.footer_main{
+    display: flex;
+    padding: 30px 0 40 10px;
+    justify-content: space-evenly;
+}
+
+h5{
+    padding: 18px 0;
+}
+.first_footer  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #5e637a;
+    padding: 3.5px 0;
+}
+
+.second_footer  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #5e637a;
+    padding: 3.5px 0;
+}
+
+.footimg1{
+    width: 140px;
+    height: 45px;
+    margin-right: 4px;
+    border: 2px;
+    border-radius: 8px;
+}
+.footimg2{
+    width: 140px;
+    height: 45px;
+    border: 2px;
+    border-radius: 8px;
+}
+.apps_link{
+    display: flex;
+}
+
+.links{
+  
+    width: 40px;
+    height: 40px;
+    color: #000000;
+}
+
+.insides{
+    display: flex;
+    flex-direction: row;
+}
+
+.guide img{
+    
+    display: flex;
+    width: 250px;
+    height: 42px;
+}
